@@ -80,6 +80,9 @@ addProduct.addEventListener('click', () => {
     } else if (isNaN(Number.parseFloat(productPrice.value))) {
         errordisplay('price');
 
+    } else if (Number.parseFloat(productPrice.value) < 0) {
+        errordisplay('price-less');
+
     } else if (productDescription.value.toString().trim().length == 0) {
         errordisplay('description');
 
@@ -132,10 +135,13 @@ function errordisplay(type) {
     } else if(type == "price") {
         alert("Price cannot be null, text or special characters");
     
-    }else if(type == "description") {
+    } else if(type == "price-less") {
+        alert("Price cannot be less than 0 ");
+    
+    } else if(type == "description") {
         alert("Product description cannot be null");
         
-    }else if(type == "description-specialchars") {
+    } else if(type == "description-specialchars") {
         alert("Description cannot contain special characters");
         
     } else if(type == "image") {

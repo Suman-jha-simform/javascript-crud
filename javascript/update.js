@@ -42,8 +42,10 @@ productImage.addEventListener('change', () => {
 updateButton.addEventListener('click', () => {
 
     if(localStorage.getItem(productId.value) ) {
-
-        if(!isNaN(Number.parseFloat(productPrice.value)) || productPrice.value.length <= 0) {            
+        if(Number.parseFloat(productPrice.value) < 0 ) {
+            alert("Price cannot be less than 0 ");
+        }
+        else if(!isNaN(Number.parseFloat(productPrice.value)) || productPrice.value.length <= 0) {            
 
             let oldDetailsArray = JSON.parse(localStorage.getItem(productId.value));
 
