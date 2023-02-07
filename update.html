@@ -32,9 +32,19 @@
                     <img src="images/update.png" class="card-img-top" alt="Update image">
                     <div class="card-body">
                         <input type="file"  id="product-image" accept="image/*">
-                        <input type="text"  id="product-id" placeholder="Product Id">
-                        <input type="text"  id="product-name" placeholder="Product Name">
-                        <input type="text"  id="product-price" placeholder="Product Price">
+                        <div class="row">
+                            <div class="col-4">Product Id</div>
+                            <div class="col-8"><input class="w-100" type="text"  id="product-id" placeholder="Product Id"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-4">Product Name</div>
+                            <div class="col-8"><input class="w-100" type="text"  id="product-name" placeholder="Product Name"></div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-4">Product Price</div>
+                            <div class="col-8"><input class="w-100" type="text"  id="product-price" placeholder="Product Price"></div>
+                        </div>
+                
                         <textarea  rows="5" id="product-description" placeholder="Product Description"></textarea>
                         <button id="update-button" class="btn btn-warning">Update Product</button>
                     </div>
