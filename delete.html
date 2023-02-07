@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="javascript/index.js"></script>
+    <script defer src="javascript/delete.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Javascript CRUD</title>
+</head>
+<body>
+    <div class="container-fluid ">
+
+        <!-- navbar container  -->
+        <div class="row mx-auto d-flex flex-wrap justify-content-center">
+            <div class="col-12 col-md-4 col-lg-4 mt-4"><a class="links" href="index.html"> <h3>Product Management System</h3> </a></div>
+            <div class="col-12 col-md-2 col-lg-2 mt-4"><button class="navbtns">Search</button></div>
+            <div class="col-12 col-md-2 col-lg-2 mt-4"><button class="navbtns">Create</button></div>
+            <div class="col-12 col-md-2 col-lg-2 mt-4"><button class="navbtns">Update</button></div>
+            <div class="col-12 col-md-2 col-lg-2 mt-4"><button class="navbtns">Delete</button></div>  
+        </div>
+        <!-- navabr container ends  -->
+
+        <!-- delete bar for product id -->
+        <div class="row d-flex justify-content-center mb-lg-5 mt-lg-5">
+            <div class="col-12 col-md-8 col-lg-4 d-flex justify-content-center mt-5 search-bar">
+                <input id="delete-bar" type="text" placeholder="Enter Id of product you want to delete !!!" >
+                <button id="delete-bar-button" ><i style="color:black;" class="fa fa-search"></i></button>
+            </div>
+
+            <div class="col-12  col-md-8 col-lg-2 d-flex justify-content-center ms-3 mt-5 fil">
+                <button id="search-all-button" class="btn btn-secondary me-2">Search All</button>
+                <button id="clear-button" class="btn btn-danger">Clear</button>
+            </div>
+        </div>
+        <!-- delete bar for product id ends here -->
+
+
+        <!-- section for displaying output of delete search -->
+        <div class="container" hidden>
+
+        </div>
+        <!-- section for displaying output of delete search ends here  -->
+
+    </div>
+</body>
+</html>
