@@ -81,7 +81,6 @@ addProduct.addEventListener('click', () => {
         errordisplay('price');
 
     } else if (Number.parseFloat(productPrice.value) < 0) {
-        errordisplay('price-less');
 
     } else if (productDescription.value.toString().trim().length == 0) {
         errordisplay('description');
